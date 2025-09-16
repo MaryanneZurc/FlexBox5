@@ -1,3 +1,10 @@
+:root {
+  --cor1: #f08080;
+  --cor2: #c71585;
+  --cor3: #db7093;
+  --cor4: #ffdab9;
+  --cor5: #eee8aa;
+}
 body {
   background-color: rgb(253, 198, 207);
 }
@@ -5,16 +12,43 @@ body {
   background-color: rgb(133, 245, 230);
   width: 90%;
   margin: auto;
-  height: 50px;
+  justify-content: center;
+
+  text-align: center;
+  display: flex;
+}
+#FooterId {
+  margin-top: 10px;
+  height: 30%;
   text-align: center;
 }
+#ImgLogo {
+  width: 80px;
+}
+#ContainerMenu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.Menu {
+  border: solid 1px black;
+  padding: 10px;
+  background-color: var(--cor5);
+}
+.Menu:hover {
+  background-color: rgb(68, 105, 138);
+}
+.Menu a {
+  text-decoration: none;
+}
+
 #ContainerCard {
   background-color: rgb(231, 133, 171);
   width: 90%;
   margin: auto;
   margin-top: 20px;
-  /* height: 250px; */
-  align-content: center;
+  height: 450px;
+
   text-align: center;
 }
 #Carrossel {
@@ -28,24 +62,26 @@ body {
   display: flex;
   justify-content: center;
   justify-content: space-around;
+  height: 180px;
 }
 #Cards2 {
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  margin-top: 10px;
+  height: 180px;
 }
 .Cards {
   border: solid 1px black;
-
+  background-color: white;
   width: 200px;
-  height: 50px;
+
   margin-top: 20px;
 }
 #Banner1 {
   width: 100%;
   height: 100%;
 }
-#ImgsCards {
-  height: 20px;
+.ImgsCards {
+  height: 100%;
+  width: 100%;
 }
