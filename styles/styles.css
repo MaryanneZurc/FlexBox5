@@ -1,15 +1,25 @@
 :root {
-  --cor1: #f08080;
-  --cor2: #c71585;
-  --cor3: #db7093;
-  --cor4: #ffdab9;
-  --cor5: #eee8aa;
+  --cor1: whitesmoke;
+  --cor2: #87CEEB;
+  --cor3: #00CED1;
+  --cor4: #5F9EA0;
+  --cor5: #4682B4;
+  --cor6: #00008B;
+  --cor7:	#E0FFFF;
+  --cor8:#F0F8FF;
+  
+  
+
 }
 body {
-  background-color: rgb(253, 198, 207);
+  background-color: var(--cor1);
+
 }
 .HeaderFooter {
-  background-color: rgb(133, 245, 230);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  border-radius: 10px; 
+  background-color:var(--cor5);
   width: 90%;
   margin: auto;
   justify-content: center;
@@ -23,35 +33,49 @@ body {
   text-align: center;
 }
 #ImgLogo {
+  border-radius: 100%;
+  background-color:var(--cor8);
+  justify-content: start;
   width: 80px;
+  height: auto;
 }
 #ContainerMenu {
+  justify-content: end;
   display: flex;
   list-style: none;
   gap: 20px;
 }
 .Menu {
-  border: solid 1px black;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid 1px var(--cor5);
   padding: 10px;
   background-color: var(--cor5);
+  ;
 }
 .Menu:hover {
-  background-color: rgb(68, 105, 138);
+  background-color:var(--cor6);
+  transition: 0,5s;
 }
+
 .Menu a {
+  color: whitesmoke;
   text-decoration: none;
 }
 
 #ContainerCard {
-  background-color: rgb(231, 133, 171);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  background-color: var(--cor8);
   width: 90%;
   margin: auto;
   margin-top: 20px;
   height: 450px;
-
   text-align: center;
 }
 #Carrossel {
+  border-radius: 10px;
   background-color: cadetblue;
   height: 200px;
   width: 90%;
@@ -59,6 +83,7 @@ body {
   margin-top: 15px;
 }
 #Cards1 {
+  
   display: flex;
   justify-content: center;
   justify-content: space-around;
@@ -71,13 +96,15 @@ body {
   height: 180px;
 }
 .Cards {
-  border: solid 1px black;
-  background-color: white;
+  border-radius: 10px;
+
+  background-color: var(--cor2);
   width: 200px;
 
   margin-top: 20px;
 }
 #Banner1 {
+  border-radius: 10px;
   width: 100%;
   height: 100%;
 }

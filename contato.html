@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox 5</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/sobre.css" />
   </head>
   <body>
     <header class="HeaderFooter">
-      <h1>Header</h1>
+      <div id="LogoImg">
+        <img src="./Imgs/Logo2.png" alt="" id="ImgLogo" />
+      </div>
+      <div>
+        <ul id="ContainerMenu">
+          <li class="Menu"><a href="./index.html">Inicio</a></li>
+          <li class="Menu"><a href="./sobre.html">Sobre</a></li>
+          <li class="Menu"><a href="./contato.html">Contato</a></li>
+        </ul>
+      </div>
     </header>
+
+  <div id="FormContato">    
     <form action="">
       <label for="Nome">Nome:</label>
       <input type="text" name="" id="Nome" />
@@ -25,8 +37,9 @@
       <input type="text" name="" id="Mensagem" />
       <textarea name="" id=""></textarea>
     </form>
+    </div>
 
-    <footer class="HeaderFooter">
+    <footer class="HeaderFooter" id="FooterId">
       <p>Footer</p>
     </footer>
   </body>
